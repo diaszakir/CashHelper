@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_bg"
+    tools:context=".History">
+
+    <RelativeLayout
+        android:id="@+id/upper_write"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginBottom="590dp"
+        android:background="@color/background2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/story"
+            android:textSize="24sp"
+            android:fontFamily="@font/montserrat_extrabold"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/background2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/new_bg"
+            android:text="@string/main"
+            android:onClick="goMain"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="11sp"
+            android:backgroundTint="@color/new_bg"
+            android:onClick="goAbout"
+            android:text="@string/about_text"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="1sp"
+            android:backgroundTint="@color/new_bg"
+            android:onClick="goContacts"
+            android:text="@string/contacts_text"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@id/linearLayout4"
+        android:layout_below="@id/upper_write"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/upper_write"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

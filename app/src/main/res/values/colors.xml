@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background2">#9230CD35</color>
+    <color name="cash">#03FD1D</color>
+    <color name="outcome">#FF0000</color>
+    <color name="menu">#B402EF09</color>
+    <color name="bg_menu">#B493FF96</color>
+    <color name="background">#00FF7F</color>
+    <color name="category_background">#FFE4C4</color>
+    <color name="story_background">#F8A122</color>
+    <color name="new_bg">#6CEA53</color>
+    <color name="text_color">#363947</color>
+</resources>

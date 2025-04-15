@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_bg"
+    tools:context=".Income">
+    <RelativeLayout
+        android:id="@+id/upper_write"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background2"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="36sp"
+            android:fontFamily="@font/montserrat_extrabold"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="102dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="@string/income_category"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:background="@color/category_background"
+        android:backgroundTint="@color/category_background"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.242">
+
+        <ImageButton
+            android:id="@+id/freelance"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/work_text"
+            app:layout_constraintVertical_bias="0.389"
+            app:srcCompat="@drawable/freelance" />
+
+        <TextView
+            android:id="@+id/freelance_text"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="@string/freelance"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/freelance"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/work_text"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="@string/work"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/work"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/work"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:contentDescription="@string/social"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.064"
+            app:srcCompat="@drawable/work" />
+
+        <ImageButton
+            android:id="@+id/business"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/work"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.062"
+            app:srcCompat="@drawable/business" />
+
+        <TextView
+            android:id="@+id/business_text"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="@string/business"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/business"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/other"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="36dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/other" />
+
+        <TextView
+            android:id="@+id/other_text"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="@string/others"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/acsia"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/present"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toEndOf="@+id/business"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.062"
+            app:srcCompat="@drawable/acsia" />
+
+        <TextView
+            android:id="@+id/acsia_text"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="@string/acsia"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.623"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acsia"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/present"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/other"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.166"
+            app:srcCompat="@drawable/gift" />
+
+        <TextView
+            android:id="@+id/present_text"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="@string/gift"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/present"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/sell"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toEndOf="@+id/freelance"
+            app:layout_constraintTop_toBottomOf="@+id/business_text"
+            app:layout_constraintVertical_bias="0.372"
+            app:srcCompat="@drawable/sale" />
+
+        <TextView
+            android:id="@+id/sell_text"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="@string/sell"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sell"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <ImageButton
+            android:id="@+id/crypto"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/other"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toEndOf="@+id/sell"
+            app:layout_constraintTop_toBottomOf="@+id/acsia_text"
+            app:layout_constraintVertical_bias="0.389"
+            app:srcCompat="@drawable/crypto" />
+
+        <TextView
+            android:id="@+id/crypto_text"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="@string/crypto"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.623"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crypto"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/background2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/new_bg"
+            android:onClick="goMain"
+            android:text="@string/main"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="11sp"
+            android:backgroundTint="@color/new_bg"
+            android:onClick="goAbout"
+            android:text="@string/about_text"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="1sp"
+            android:backgroundTint="@color/new_bg"
+            android:onClick="goContacts"
+            android:text="@string/contacts_text"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/writeSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:ems="10"
+        android:hint="@string/instruction1"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/writeSmt"
+        android:layout_width="243dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="112dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Введите свою категорию"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/categorySelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="@string/income_category"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/writeSum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/menu"
+        android:onClick="saveData"
+        android:text="@string/save"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/writeSum"
+        app:layout_constraintVertical_bias="0.564" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

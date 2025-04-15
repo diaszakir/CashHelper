@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">CashHelper</string>
+    <string name="app_name_1">Cash</string>
+    <string name="app_name_2">Helper</string>
+    <string name="transport">Транспорт</string>
+    <string name="food">Продукты</string>
+    <string name="health">Здоровье</string>
+    <string name="medicine">Лекарства</string>
+    <string name="other">Прочее</string>
+    <string name="education">Образование</string>
+    <string name="leisure">Досуг</string>
+    <string name="income">Доход</string>
+    <string name="outcome">Расход</string>
+    <string name="greeting">Добро пожаловать!</string>
+    <string name="about_text">О приложении</string>
+    <string name="contacts_text">Контакты</string>
+    <string name="main">Главная</string>
+    <string name="about_app">CashHelper - приложение помощник для введения индивидуальных финансов включающий
+    доход и расход. Также в этом приложении есть регулятор финансов по критериям.</string>
+    <string name="message_in_about">Если у вас есть вопросы или пожелания можете написать. Контакты стоят в вкладке
+    (Контакты)</string>
+    <string name="contacts">Электронная почта: **********@gmail.com
+                            Телеграмм: ************************
+                            Дискорд: ********</string>
+    <string name="warning">Внимание!\n
+        При удалении стираются все данные пользователя!</string>
+    <string name="social">Социальные сети: появяться в будущем</string>
+    <string name="outcome_category">Выберите категорию расхода</string>
+    <string name="income_category">Выберите категорию дохода</string>
+    <string name="others">Другое</string>
+    <string name="grocery">Продукты</string>
+    <string name="hobby">Хобби</string>
+    <string name="home">Дом</string>
+    <string name="internet">Интернет</string>
+    <string name="instruction1">Введите сумму</string>
+    <string name="travel">Путешествие</string>
+    <string name="sport">Спорт</string>
+    <string name="entertainment">Развлечение</string>
+    <string name="gift">Подарок</string>
+    <string name="save">Сохранить</string>
+    <string name="work">Работа</string>
+    <string name="business">Бизнес</string>
+    <string name="acsia">Акции</string>
+    <string name="freelance">Фриланс</string>
+    <string name="sell">Продажа</string>
+    <string name="crypto">Крипто</string>
+    <string name="story">История финансов</string>
+</resources>
